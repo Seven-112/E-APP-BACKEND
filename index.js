@@ -54,7 +54,7 @@ app.use('/chat',chatRoutes)
 
 
 app.use((req,res,next)=>{
-    const error = new Error("NOT FOUND");
+    const error = new Error("HELLO TO SERVER");
     error.status = 404
     next(error);
 })
